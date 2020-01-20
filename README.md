@@ -1,7 +1,8 @@
-### Extraction links from website
+# Extraction links from website :snake: :scroll:
 
--  just pass the target as 1 param, like:
-E.X: python extraction.py https://g1.globo.com/
-
+- Just pass the target as param, like:
+```python
+   python extraction.py https://www.tecmundo.com.br/
+```
 - Requirements: 
-python 3.6+
+python 3.6+ 
