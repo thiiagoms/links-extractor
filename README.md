@@ -18,3 +18,8 @@ $ python extractor.py
 $ docker build -t extractor .
 $ docker run -i -t extractor
 ```
+
+## and then, input the site url, for example:
+```bash
+>>> URL here: https://github.com
+```
