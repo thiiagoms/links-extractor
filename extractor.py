@@ -1,23 +1,24 @@
-# -*- coding: utf-8 -*-
-"""
- Simple extraction links tool
-"""
-import urllib.request as url_lib
-from re import findall
-from sys import argv
+#!/usr/bin/env python3
 
+from requests import get
+from bs4 import BeautifulSoup
 
-# parse the target 
-url = argv[1]
-print(f"[*] connection to {url}")
-# connecting to url
-con_site = url_lib.urlopen(url)
-print("[*] reading...")
-# read html code
-html_response = con_site.read().decode('utf-8')
-# parsing
-print("[*] parsing...")
-# with regex to gel all the links
-links = findall('"((http|ftp)s?://.*?)"', html_response)
-# print links
-print(links)
+class Extractor:
+
+    def __init__(self, url: str):
+        self.__url = url
+    
+    def _send_request(self) -> BeautifulSoup:
+        reqs = get(self.__url)
+        soup = BeautifulSoup(reqs.text, 'html.parser')
+        return soup
+    
+    def cli_printer(self, response: BeautifulSoup) -> None:
+        urls = []
+        for link in response.find_all('a'):
+            print(f"[*] Link: {link.get('href')}")
+
+url = input(">>> URL here: ")
+extractor = Extractor(url)
+response = extractor._send_request()
+extractor.cli_printer(response)
