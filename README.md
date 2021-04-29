@@ -1,8 +1,20 @@
-# Extraction links from website :snake: :scroll:
+<center>
+   <h1>Link extractor</h1>
+</center>
+<br>
+<img src="img/clamp.png" alt="Extract links" style="height: 100px; width:100px; display: block; margin-left: auto; margin-right: auto; width: auto"/>
+<br>
 
-- Just pass the target as param, like:
-```python
-   python extractor.py https://www.tecmundo.com.br/
+<h3> Extract all links from websites</h3>
+
+## => run with pipenv :snake:
+```bash
+$ pipenv install
+$ pipenv shell
+$ python extractor.py
 ```
-- Requirements: 
-python 3.6+ 
+## => run with docker :whale:
+```docker
+$ docker build -t extractor .
+$ docker run -i -t extractor
+```
