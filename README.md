@@ -2,7 +2,7 @@
   <a href="https://github.com/thiiagoms/links-extractor">
     <img src="img/clamp.png" alt="Logo" width="80" height="80">
   </a>
-     <h3 align="center">Best-README-Template</h3>
+     <h3 align="center">Link extractor</h3>
 </p>
 
 ## => run with pipenv :snake:
