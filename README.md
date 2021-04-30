@@ -1,11 +1,9 @@
-<center>
-   <h1>Link extractor</h1>
-</center>
-<br>
-<img src="img/clamp.png" alt="Extract links" style="height: 100px; width:100px; display: block; margin-left: auto; margin-right: auto; width: auto"/>
-<br>
-
-<h3> Extract all links from websites</h3>
+<p align="center">
+  <a href="https://github.com/thiiagoms/links-extractor">
+    <img src="img/clamp.png" alt="Logo" width="80" height="80">
+  </a>
+     <h3 align="center">Best-README-Template</h3>
+</p>
 
 ## => run with pipenv :snake:
 ```bash
