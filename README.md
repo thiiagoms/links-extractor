@@ -89,4 +89,3 @@ links-extractor $ pytest
 ```bash
 links-extractor $  autopep8 --in-place --aggressive --aggressive src/services/extractor.py
 ```
-p
