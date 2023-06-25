@@ -6,8 +6,11 @@ name = "pypi"
 [packages]
 bs4 = "*"
 requests = "*"
+pytest = "*"
 
 [dev-packages]
+pylint = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.8"
