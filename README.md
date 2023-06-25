@@ -15,7 +15,7 @@ Library that allows for the extraction of links from web pages
 - [Dependencies :heavy_plus_sign:](#dependencies)
 - [Install :package:](#install)
 - [Run :runner:](#run)
-= [Bonus :medal_sports:](#bonus)
+- [Bonus :medal_sports:](#bonus)
 
 ## Dependencies
 - Python 3.8+
